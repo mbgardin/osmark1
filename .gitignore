@@ -1,0 +1,48 @@
+# Pocket OS — .gitignore
+
+# Build artifacts
+build/work/
+build/*.iso
+build/*.img
+build/*.qcow2
+build/pocket-vm-disk.qcow2
+
+# Compiled binaries
+desktop/pocket-wm/pocket-wm
+desktop/pocket-wm/*.o
+desktop/pocket-shell/__pycache__/
+desktop/pocket-explorer/pocket-explorer
+desktop/pocket-explorer/*.o
+desktop/pocket-terminal/pocket-terminal
+desktop/pocket-terminal/*.o
+desktop/pocket-notepad/pocket-notepad
+desktop/pocket-notepad/*.o
+desktop/pocket-settings/__pycache__/
+desktop/pocket-taskmgr/pocket-taskmgr
+desktop/pocket-taskmgr/*.o
+
+# Python cache
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor
+.vscode/settings.json
+*.swp
+*.swo
+*~
+
+# Docker build cache (managed internally)
+.dockerignore
+
+# Logs
+*.log

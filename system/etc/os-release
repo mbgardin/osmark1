@@ -1,0 +1,12 @@
+NAME="Pocket OS"
+VERSION="0.1 (Alpha)"
+ID=pocketos
+ID_LIKE=debian
+PRETTY_NAME="Pocket OS 0.1 (Alpha)"
+VERSION_ID="0.1"
+HOME_URL="https://github.com/montegardiner/pocketos"
+SUPPORT_URL="https://github.com/montegardiner/pocketos/issues"
+BUG_REPORT_URL="https://github.com/montegardiner/pocketos/issues"
+PRIVACY_POLICY_URL=""
+VERSION_CODENAME=alpha
+DEBIAN_CODENAME=bookworm
