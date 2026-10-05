@@ -1,0 +1,43 @@
+MIT License
+
+Copyright (c) 2026 Monte Gardiner
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+NOTICE: This license applies to Pocket OS original components only.
+
+Pocket OS incorporates substantial open-source components under their own
+respective licenses, including (but not limited to):
+
+- Linux kernel (GPLv2)
+- Debian GNU/Linux packages (various; see docs/LICENSES.md)
+- Xorg / X.Org (MIT/various)
+- systemd (LGPLv2.1+)
+- NetworkManager (GPLv2+)
+- PipeWire (MIT/LGPLv2.1)
+- GTK (LGPLv2.1+)
+
+For the complete dependency and license listing, see docs/LICENSES.md
+and docs/DEPENDENCIES.md.
+
+Redistribution of Pocket OS as a binary distribution must comply with all
+upstream license obligations, including GPL source-code availability
+requirements.
