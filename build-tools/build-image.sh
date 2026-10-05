@@ -10,7 +10,7 @@ ok()   { echo "[POCKET-BUILD] ✓ $*"; }
 err()  { echo "[POCKET-BUILD] ERROR: $*" >&2; }
 
 REPO_ROOT="/pocket-os"
-BUILD_WORK="$REPO_ROOT/build/work"
+BUILD_WORK="/work"
 OUTPUT_ISO="$REPO_ROOT/build/pocketos-amd64.iso"
 
 mkdir -p "$BUILD_WORK"
