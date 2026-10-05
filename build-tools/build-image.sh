@@ -84,7 +84,7 @@ systemd
 systemd-sysv
 dbus
 dbus-user-session
-polkit
+polkitd
 
 # Networking
 network-manager
@@ -166,7 +166,7 @@ gir1.2-gdkpixbuf-2.0
 gir1.2-pango-1.0
 gir1.2-nm-1.0
 gir1.2-vte-2.91
-gir1.2-upower-glib-1.0
+gir1.2-upowerglib-1.0
 gir1.2-udisks-2.0
 
 # Storage tools
