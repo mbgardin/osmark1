@@ -252,8 +252,8 @@ void pwm_draw_button(PocketWM *wm, PocketWindow *pw, int btn, int hover) {
     gcv.foreground = icon_col;
     XChangeGC(wm->dpy, gc, GCForeground, &gcv);
 
-    int cx = bx + bsize / 2;
-    int cy = vtop + bsize / 2;
+    int cx = bx + bsize / 2;  (void)cx;
+    int cy = vtop + bsize / 2; (void)cy;
 
     switch (btn) {
         case 0: /* Close — X mark */

@@ -180,6 +180,7 @@ void pwm_handle_button_press(PocketWM *wm, XButtonEvent *ev) {
 /* ── Button Release ───────────────────────────────────────────────────────── */
 
 void pwm_handle_button_release(PocketWM *wm, XButtonEvent *ev) {
+    (void)ev;
     /* Find the window being dragged */
     for (PocketWindow *pw = wm->windows; pw; pw = pw->next) {
         if (pw->drag_mode != DRAG_NONE) {
@@ -431,5 +432,5 @@ void pwm_alttab_start(PocketWM *wm) {
 }
 
 void pwm_alttab_next(PocketWM *wm) { pwm_alttab_start(wm); }
-void pwm_alttab_commit(PocketWM *wm) { /* no-op for now */ }
-void pwm_alttab_cancel(PocketWM *wm) { /* no-op for now */ }
+void pwm_alttab_commit(PocketWM *wm) { (void)wm; /* no-op for now */ }
+void pwm_alttab_cancel(PocketWM *wm) { (void)wm; /* no-op for now */ }

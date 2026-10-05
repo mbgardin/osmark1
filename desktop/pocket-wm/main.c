@@ -57,6 +57,7 @@ static int x_error_handler(Display *dpy, XErrorEvent *ev) {
 }
 
 static int x_io_error_handler(Display *dpy) {
+    (void)dpy;
     fprintf(stderr, "[pocket-wm] Fatal X IO error. Exiting.\n");
     exit(EXIT_FAILURE);
 }

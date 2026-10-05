@@ -7,6 +7,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h>
+#include <sys/wait.h>
 
 /* ── Window lookup ────────────────────────────────────────────────────────── */
 
@@ -120,6 +122,7 @@ int pwm_window_should_decorate(PocketWM *wm, Window win) {
 /* ── Window framing ───────────────────────────────────────────────────────── */
 
 void pwm_frame_window(PocketWM *wm, Window client, int was_viewable) {
+    (void)was_viewable;
     /* Don't double-frame */
     if (pwm_find_by_client(wm, client)) return;
 
@@ -581,6 +584,7 @@ void pwm_scan_existing_windows(PocketWM *wm) {
 /* ── Hit testing ──────────────────────────────────────────────────────────── */
 
 HitArea pwm_hittest(PocketWM *wm, PocketWindow *pw, int x, int y) {
+    (void)wm;
     int tw = pw->width + 2 * BORDER_WIDTH;
     int bsize = BUTTON_SIZE;
     int bmargin = BUTTON_MARGIN;
